@@ -28,6 +28,7 @@ section {
     padding: 40px;
     margin-left: 25%;
     margin-right: 25%;
+    min-height: 235px;
 
 }
 
@@ -51,8 +52,8 @@ h2 {
     font-size: 35px;
     text-align: center;  
     display: block;
-    margin-bottom: 25px;
-    color: var(--light-color)
+    color: var(--light-color);
+    align-self: center;
 }
 
 .bubbleTail {
