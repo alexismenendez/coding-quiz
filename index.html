@@ -8,3 +8,57 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
+  <!-- 1. Start Button that starts the quiz and a timer
+      a. start Button
+      b. function for timer start
+  2. List of questions and possible answers
+      a. if question right proceed to next question
+      b. if question wrong deduct time from clock
+      c. if all questions answered, game is wrong
+  3. Game over screen with score board
+      a. game over title
+      b. input box for initials
+      c. saves intials and score to local memory -->
+
+    <body>
+        <header>
+            <div class="highscores">
+                <p href="#">View Highscores</p>
+            </div>
+            <div class="timer">
+                <p>Time: <span id="timeCounter">0</span></p>
+            </div>
+        </header>
+
+        <main>
+            <section class="mainContent">
+                <div style=display:show; class="startPage">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                </div>
+                <div style="display:none;" class="quizQuestions">
+                    <h2 id="question">Question</h2>
+                </div>
+            </section>
+            <div class="bubbleTail">
+                <img src="./assets/images/bubble-tail.png">
+            </div>
+            <div class="buttonContainer">
+                <button style= border:none; class="startButton">Start Quiz</button>
+                
+            </div>
+            
+            <section style=display:none; class="answerContainer">
+                <ul>
+                    <li id="a" class="answerOption">A Text</li>
+                    <li id="b" class="answerOption">B Text</li>
+                    <li id="c" class="answerOption">C Text</li>
+                    <li id="d" class="answerOption">D Text</li>
+                </ul>
+            </section>
+            
+
+        </main>
+        
+    </body>
