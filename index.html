@@ -7,6 +7,10 @@
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Young+Serif&display=swap" rel="stylesheet">
+    
   </head>
 
   <!-- 1. Start Button that starts the quiz and a timer
@@ -31,11 +35,12 @@
             </div>
         </header>
 
-        <main>
+        <main class="main-wrapper">
             <section class="mainContent">
                 <div style=display:show; class="startPage">
                     <h1>Coding Quiz Challenge</h1>
-                    <p>Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    <p id="pText">Try answering the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                    <p id="subtext" style="display:none;">subtext</p>
                 </div>
                 <div style="display:none;" class="questionContainer">
                     <h2 id="question">Question</h2>
@@ -44,13 +49,12 @@
             <div class="bubbleTail">
                 <img src="./assets/images/bubble-tail.png">
             </div>
-            <div class="buttonContainer">
-                <button style="display:show; border:none;" class="startButton">Start Quiz</button>
-                
+            <div class="buttonContainer" style="display:show;">
+                <button style="border:none;" class="startButton">Start Quiz</button>
             </div>
             
             <section style=display:none; class="answerContainer">
-                <ul>
+                <ul class="answerBoxes">
                     <li id="a" class="answerOption">A Text</li>
                     <li id="b" class="answerOption">B Text</li>
                     <li id="c" class="answerOption">C Text</li>
