@@ -75,7 +75,6 @@ function startGame() {
   
     updateDisplay();
     startTimer();
-    // answerSelect();
 
 };
 
